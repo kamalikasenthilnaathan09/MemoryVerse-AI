@@ -1,0 +1,273 @@
+/* ===========================================
+   MEMORYVERSE AI - ANIMATIONS
+=========================================== */
+
+
+/* ==========================
+   Fade Animations
+========================== */
+
+.fade-up {
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+
+@keyframes fadeUp {
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================
+   Brain Floating Animation
+========================== */
+
+.brain-container {
+
+    animation:floatBrain 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floatBrain {
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================
+   Glow Animation
+========================== */
+
+.hero-glow {
+
+    animation:pulseGlow 3s infinite;
+
+}
+
+
+
+@keyframes pulseGlow {
+
+
+    0%{
+
+        opacity:.5;
+
+        transform:scale(1);
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.15);
+
+    }
+
+
+    100%{
+
+        opacity:.5;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ==========================
+   Node Floating Animation
+========================== */
+
+.node {
+
+    animation:
+    nodeFloat 3s ease-in-out infinite;
+
+}
+
+
+
+.node2 {
+
+    animation-delay:.5s;
+
+}
+
+
+.node3 {
+
+    animation-delay:1s;
+
+}
+
+
+.node4 {
+
+    animation-delay:1.5s;
+
+}
+
+
+.node5 {
+
+    animation-delay:2s;
+
+}
+
+
+
+@keyframes nodeFloat {
+
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================
+   Card Hover Shine
+========================== */
+
+
+.feature-card,
+.stat-card {
+
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+
+}
+
+
+
+.feature-card:hover,
+.stat-card:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/* ==========================
+   Button Animation
+========================== */
+
+
+.primary-btn,
+.login-btn {
+
+
+    transition:.3s ease;
+
+}
+
+
+
+.primary-btn:hover,
+.login-btn:hover {
+
+
+    transform:translateY(-4px);
+
+}
+
+
+
+/* ==========================
+   Smooth Reveal
+========================== */
+
+
+.reveal {
+
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+
+
+.reveal.active {
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:
+    all .8s ease;
+
+}

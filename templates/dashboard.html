@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MemoryVerse AI - Dashboard</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050816, #111827);
+            color: white;
+            min-height: 100vh;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+        }
+
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8b5cf6;
+        }
+
+
+        .logout {
+            text-decoration: none;
+            color: white;
+            background: #6366f1;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+
+        .container {
+            padding: 40px;
+        }
+
+
+        h1 {
+            font-size: 36px;
+        }
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+
+        .card {
+
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(99,102,241,0.2);
+
+        }
+
+
+        .card h2 {
+            color: #a78bfa;
+        }
+
+
+        .upload {
+
+            margin-top: 40px;
+            padding: 30px;
+            border: 2px dashed #6366f1;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="navbar">
+
+    <div class="logo">
+        🧠 MemoryVerse AI
+    </div>
+
+
+    <a class="logout" href="/logout">
+        Logout
+    </a>
+
+</div>
+
+
+
+<div class="container">
+
+
+<h1>
+    Welcome, {{ session['user'] }} 👋
+</h1>
+
+
+<p>
+    Your AI-powered digital identity journey starts here.
+</p>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h2>
+📄 Documents
+</h2>
+
+<p>
+Upload and organize certificates,
+projects, achievements and records.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🤖 AI Profile
+</h2>
+
+<p>
+AI will understand your skills,
+experiences and growth journey.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+🔍 Smart Search
+</h2>
+
+<p>
+Find anything from your digital identity using AI.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+📊 Analytics
+</h2>
+
+<p>
+Visualize your learning and career progress.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<div class="upload">
+
+<h2>
+Upload Your Journey
+</h2>
+
+<p>
+Certificates • Projects • Internships • Achievements
+</p>
+
+<button>
+Coming Soon 🚀
+</button>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>

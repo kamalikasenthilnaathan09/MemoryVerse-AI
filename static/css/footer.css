@@ -1,0 +1,83 @@
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer{
+
+    margin-top:120px;
+
+    padding:70px 8% 40px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        180deg,
+        rgba(10,15,35,.30),
+        rgba(5,8,22,1)
+    );
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===============================
+   Logo
+================================= */
+
+.footer-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.footer-logo i{
+
+    color:#4F8CFF;
+
+}
+
+/* ===============================
+   Description
+================================= */
+
+footer p{
+
+    color:#bfc8e2;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:12px auto;
+
+}
+
+/* ===============================
+   Copyright
+================================= */
+
+footer p:last-child{
+
+    margin-top:35px;
+
+    font-size:15px;
+
+    color:#8b9ab7;
+
+}

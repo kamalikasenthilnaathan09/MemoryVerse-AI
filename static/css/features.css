@@ -1,0 +1,172 @@
+/* ===========================================
+   FEATURES SECTION
+=========================================== */
+
+.features{
+
+    padding:120px 8%;
+
+}
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-heading h2{
+
+    font-size:46px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.section-heading h2 span{
+
+    background:linear-gradient(
+        90deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+.section-heading p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#bfc8e2;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.feature-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    transition:.4s;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Glow Effect */
+
+.feature-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:rgba(79,140,255,.18);
+
+    border-radius:50%;
+
+    top:-70px;
+
+    right:-70px;
+
+    filter:blur(45px);
+
+}
+
+/* Hover */
+
+.feature-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#4F8CFF;
+
+    box-shadow:
+
+    0 20px 45px rgba(79,140,255,.18);
+
+}
+
+/* ===========================
+   Icons
+=========================== */
+
+.feature-card i{
+
+    font-size:48px;
+
+    color:#4F8CFF;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.feature-card h3{
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+    color:white;
+
+}
+
+/* ===========================
+   Paragraph
+=========================== */
+
+.feature-card p{
+
+    color:#bfc8e2;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Documents | MemoryVerse AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/upload.css') }}">
+
+</head>
+
+<body>
+
+<div class="upload-container">
+
+    <div class="upload-card">
+
+        <h1 class="upload-title">
+            📄 Upload Documents
+        </h1>
+
+        <p class="upload-subtitle">
+            Upload your academic and professional documents to build your
+            AI-powered Digital Identity.
+        </p>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+
+            {% for category, message in messages %}
+
+                <div class="alert {{ category }}">
+                    {{ message }}
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST"
+              enctype="multipart/form-data">
+
+            <div class="upload-box">
+
+                <h3>Select a Document</h3>
+
+                <input
+                    type="file"
+                    name="document"
+                    required>
+
+                <br><br>
+
+                <button
+                    class="upload-btn"
+                    type="submit">
+
+                    Upload Document
+
+                </button>
+
+                <div class="progress-placeholder">
+
+                    Supported formats:
+                    PDF • DOCX • PNG • JPG • JPEG
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+/* ===========================================
+   STATISTICS SECTION
+=========================================== */
+
+.stats{
+
+    padding:100px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.stat-card{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Glow */
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(79,140,255,.15);
+
+    top:-80px;
+
+    left:-80px;
+
+    filter:blur(45px);
+
+}
+
+/* Hover */
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#4F8CFF;
+
+    box-shadow:
+
+        0 18px 40px rgba(79,140,255,.18);
+
+}
+
+/* Number */
+
+.stat-card h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    background:linear-gradient(
+        90deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* Label */
+
+.stat-card p{
+
+    font-size:18px;
+
+    color:#bfc8e2;
+
+}

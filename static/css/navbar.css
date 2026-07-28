@@ -1,0 +1,153 @@
+/* ===================================================
+   NAVBAR
+=================================================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(6,10,25,.55);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ================= Logo ================= */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.logo i{
+
+    color:#4F8CFF;
+
+    font-size:30px;
+
+}
+
+.logo-ai{
+
+    color:#8B5CF6;
+
+}
+
+/* ================= Navigation ================= */
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+nav a{
+
+    position:relative;
+
+    color:#cbd5e1;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:white;
+
+}
+
+/* underline */
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ================= Login Button ================= */
+
+.login-btn{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 25px rgba(79,140,255,.35),
+
+    0 12px 30px rgba(139,92,246,.30);
+
+}

@@ -1,0 +1,217 @@
+/* ===========================================
+   HERO SECTION
+=========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:140px 8% 80px;
+
+}
+
+/* ===========================
+   Left Side
+=========================== */
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:64px;
+
+    line-height:1.15;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.hero-content h1 span{
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+    max-width:620px;
+
+    margin-bottom:40px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    border:none;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 30px rgba(91,140,255,.35),
+    0 15px 35px rgba(138,79,255,.30);
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--primary);
+
+    background:transparent;
+
+    color:white;
+
+    padding:16px 36px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+/* ===========================
+   Right Side
+=========================== */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.brain-circle{
+
+    width:360px;
+
+    height:360px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:120px;
+
+    background:
+    radial-gradient(circle,
+    rgba(91,140,255,.35),
+    rgba(138,79,255,.15));
+
+    border:2px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 0 40px rgba(91,140,255,.35),
+
+    0 0 80px rgba(138,79,255,.25);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   Floating Animation
+=========================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}

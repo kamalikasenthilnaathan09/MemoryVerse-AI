@@ -1,0 +1,116 @@
+/* ===========================================
+   MemoryVerse AI - Main Stylesheet
+   =========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Component Styles */
+@import url("navbar.css");
+@import url("hero.css");
+@import url("features.css");
+@import url("workflow.css");
+@import url("stats.css");
+@import url("footer.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+/* ===============================
+   Root Variables
+================================= */
+
+:root{
+
+    --bg:#070B16;
+    --bg2:#0F172A;
+
+    --primary:#5B8CFF;
+    --secondary:#8A4FFF;
+
+    --text:#FFFFFF;
+    --text-light:#C7D2FE;
+
+    --card:rgba(255,255,255,.05);
+
+    --border:rgba(255,255,255,.08);
+
+}
+
+/* ===============================
+   Reset
+================================= */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+/* ===============================
+   Body
+================================= */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top left,#243B7A 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#47246B 0%,transparent 35%),
+    var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+/* ===============================
+   General
+================================= */
+
+section{
+
+    padding:100px 8%;
+
+}
+
+h1,h2,h3{
+
+    font-weight:700;
+
+}
+
+p{
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+}

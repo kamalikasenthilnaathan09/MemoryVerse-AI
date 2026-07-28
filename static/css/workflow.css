@@ -1,0 +1,140 @@
+/* ===========================================
+   WORKFLOW SECTION
+=========================================== */
+
+.workflow{
+
+    padding:120px 8%;
+
+}
+
+/* ===============================
+   Timeline Container
+================================= */
+
+.workflow-container{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    position:relative;
+
+}
+
+/* Horizontal Line */
+
+.workflow-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:40px;
+
+    left:12%;
+
+    right:12%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    z-index:0;
+
+}
+
+/* ===============================
+   Step Card
+================================= */
+
+.workflow-step{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+/* Number Circle */
+
+.number{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #4F8CFF,
+        #8B5CF6
+    );
+
+    box-shadow:
+
+        0 0 25px rgba(79,140,255,.35),
+        0 0 35px rgba(139,92,246,.25);
+
+    transition:.35s;
+
+}
+
+/* Hover */
+
+.workflow-step:hover .number{
+
+    transform:scale(1.08);
+
+}
+
+/* Title */
+
+.workflow-step h3{
+
+    color:white;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+/* Description */
+
+.workflow-step p{
+
+    color:#bfc8e2;
+
+    line-height:1.7;
+
+    font-size:16px;
+
+}

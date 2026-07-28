@@ -1,0 +1,223 @@
+/* ===========================================
+   MEMORYVERSE AI - RESPONSIVE DESIGN
+=========================================== */
+
+
+/* ==========================
+   Tablets
+========================== */
+
+@media (max-width: 1024px){
+
+
+    .navbar{
+
+        padding:20px 5%;
+
+    }
+
+
+    nav{
+
+        gap:20px;
+
+    }
+
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+
+    .hero-content{
+
+        max-width:800px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+
+    .hero-users{
+
+        justify-content:center;
+
+    }
+
+
+}
+
+
+
+/* ==========================
+   Mobile Devices
+========================== */
+
+@media (max-width:768px){
+
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:25px;
+
+    }
+
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+
+    .hero{
+
+        padding:60px 5%;
+
+    }
+
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+
+    .hero-buttons{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:center;
+
+    }
+
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:220px;
+
+        text-align:center;
+
+        margin:0;
+
+    }
+
+
+    .brain{
+
+        width:190px;
+
+        height:190px;
+
+        font-size:70px;
+
+    }
+
+
+    .node{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:34px;
+
+    }
+
+
+    .feature-card{
+
+        padding:30px 20px;
+
+    }
+
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    footer{
+
+        padding:30px 20px;
+
+    }
+
+
+}
+
+
+
+/* ==========================
+   Small Phones
+========================== */
+
+@media (max-width:480px){
+
+
+    .logo{
+
+        font-size:20px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+
+    .badge{
+
+        font-size:13px;
+
+    }
+
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

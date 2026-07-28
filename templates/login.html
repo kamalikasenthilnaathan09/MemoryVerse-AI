@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryVerse AI - Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #050816, #111827);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 40px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 30px rgba(99,102,241,0.3);
+        }
+
+        h1 {
+            color: #8b5cf6;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #6366f1;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #8b5cf6;
+        }
+
+        .error {
+            color: #ff6b6b;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>🧠 MemoryVerse AI</h1>
+
+    <p>Intelligent Digital Identity System</p>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+   <form method="POST">
+
+    <input 
+    type="email" 
+    name="email" 
+    placeholder="Email"
+    required>
+
+
+    <input 
+    type="password" 
+    name="password" 
+    placeholder="Password"
+    required>
+
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
+
+
+<p>
+    New user?
+    <a href="/register">
+        Create account
+    </a>
+</p>
+
+</div>
+
+</body>
+</html>

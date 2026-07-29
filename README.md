@@ -260,6 +260,10 @@ MemoryVerse-AI/
 ![Settings](screenshots/settings-page.png)
 
 ---
+# MemoryVerse AI
+## Intelligent Digital Identity System
+
+A Flask-based digital identity management platform designed to organize personal records with a scalable foundation for future AI-powered document intelligence.
 
 # ⚙ Installation
 

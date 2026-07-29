@@ -1,164 +1,129 @@
 # 🧠 MemoryVerse AI
+
 ### Intelligent Digital Identity System
 
-<p align="center">
-  <img src="system-architecture.png" alt="MemoryVerse AI Architecture" width="900">
-</p>
+> Transforming scattered academic and professional documents into an organized, searchable, and intelligent digital identity.
 
-<p align="center">
-  <b>An AI-inspired platform that helps students organize, manage, and access their academic and professional documents through a modern digital identity system.</b>
-</p>
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-MemoryVerse AI is a web-based Digital Identity System developed to simplify how students manage their academic and professional records.
+MemoryVerse AI is a modern web-based Digital Identity System designed to help students organize, manage, and access their academic and professional journey from a single platform.
 
-Throughout their journey, students collect resumes, certificates, internship letters, project reports, and achievements. These documents often become scattered across folders, emails, and cloud storage, making them difficult to locate when needed.
+Students accumulate resumes, certificates, internship letters, project reports, portfolios, achievements, and learning records throughout their education. Managing these documents across folders, cloud drives, and emails becomes increasingly difficult over time.
 
-MemoryVerse AI provides a centralized platform where users can securely manage their documents through an intuitive dashboard, making their digital portfolio organized and easily accessible.
+MemoryVerse AI provides a centralized platform that simplifies document management through an intuitive dashboard, organized storage, visual analytics, and intelligent navigation, enabling users to maintain a structured digital identity.
+
+---
+
+# 🎯 Problem Statement
+
+Academic and professional documents are often scattered across multiple storage locations, making retrieval difficult and time-consuming.
+
+MemoryVerse AI addresses this challenge by providing a centralized digital identity platform where users can securely organize, manage, and access their important documents through a modern and user-friendly interface.
 
 ---
 
 # ✨ Key Features
 
-### 🔐 User Authentication
+## 🔐 Authentication
+
 - Secure Login & Registration
+- User Authentication
 - Session Management
-- User Profile
-
-### 📂 Document Management
-- Upload academic and professional documents
-- Organize files in one place
-- Manage uploaded documents
-
-### 📊 Interactive Dashboard
-- User-friendly dashboard
-- Quick access to uploaded files
-- Clean and responsive interface
-
-### 🔍 Smart Search
-- Search documents efficiently
-- Organized document listing
-
-### 🕸️ Knowledge Graph
-- Visual representation of relationships between documents and categories
-
-### 📅 Digital Timeline
-- Displays academic and professional milestones chronologically
-
-### 🤖 AI Assistant Interface
-- Dedicated AI assistant page with a modern chat interface
-
-### 📈 Analytics Dashboard
-- Visual analytics for uploaded documents
-- Interactive charts and statistics
-
-### 👤 Profile Management
-- Update personal information
-- Manage account details
-
-### ⚙️ Settings
-- Application preferences
-- Account management
-
-### 📄 Resume Builder
-- Dedicated resume builder interface
 
 ---
 
-# 🏗️ System Architecture
+## 📂 Document Management
 
-The application follows a modular Flask architecture.
-
-```
-User
-   │
-   ▼
-Frontend (HTML • CSS • JavaScript)
-   │
-   ▼
-Flask Application
-│
-├── Authentication
-├── Dashboard
-├── Document Management
-├── Profile
-├── Analytics
-├── AI Assistant
-├── Knowledge Graph
-└── Timeline
-   │
-   ▼
-SQLite Database
-```
+- Upload Documents
+- Organize Files
+- Document Library
+- Easy Access
 
 ---
 
-# 🛠️ Technology Stack
+## 📊 Dashboard
 
-## Frontend
-- HTML5
-- CSS3
-- JavaScript
-
-## Backend
-- Python
-- Flask
-
-## Database
-- SQLite
-
-## Frameworks & Libraries
-- Flask
-- Jinja2
-- SQLAlchemy
+- Modern Dashboard
+- Quick Navigation
+- User Statistics
+- Activity Overview
 
 ---
 
-# 📂 Project Structure
+## 🔍 Smart Search
 
-```
-MemoryVerse-AI
-│
-├── database/
-├── models/
-├── routes/
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── templates/
-├── screenshots/
-├── app.py
-├── config.py
-├── extensions.py
-├── requirements.txt
-├── Procfile
-└── README.md
-```
+- Search Documents
+- Organized Results
+- Quick Retrieval
 
 ---
 
-# 📸 Application Screenshots
+## 🕸 Knowledge Graph
+
+- Visual document relationship interface
+- Connected information representation
+
+---
+
+## 📅 Digital Timeline
+
+- Chronological journey visualization
+- Academic and professional milestones
+
+---
+
+## 🤖 AI Assistant Interface
+
+- Dedicated AI assistant page
+- Modern chat interface
+- Interactive UI
+
+---
+
+## 📈 Analytics
+
+- Dashboard Analytics
+- Visual Charts
+- Document Statistics
+
+---
+
+## 👤 Profile Management
+
+- Update User Information
+- Manage Personal Profile
+
+---
+
+## ⚙ Settings
+
+- User Preferences
+- Account Settings
+
+---
+
+## 📄 Resume Builder
+
+- Resume Builder Interface
+- Professional Resume Layout
+
+---
+
+# 🖼 Project Preview
 
 ## Landing Page
 
 ![Landing Page](screenshots/landing-page.png)
-
----
-
-## Login
-
-![Login](screenshots/login-page.png)
-
----
-
-## Register
-
-![Register](screenshots/register-page.png)
 
 ---
 
@@ -168,61 +133,135 @@ MemoryVerse-AI
 
 ---
 
-## Documents
+# 🏗 System Architecture
+
+The application follows a modular Flask architecture for scalability and maintainability.
+
+![System Architecture](system-architecture.png)
+
+---
+
+# 💻 Technology Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Python, Flask |
+| Database | SQLite |
+| Template Engine | Jinja2 |
+| Styling | CSS3 |
+| Version Control | Git & GitHub |
+
+---
+
+# 📁 Project Structure
+
+```
+MemoryVerse-AI/
+│
+├── database/
+├── models/
+├── routes/
+├── screenshots/
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── templates/
+│
+├── app.py
+├── config.py
+├── extensions.py
+├── requirements.txt
+├── Procfile
+├── system-architecture.png
+└── README.md
+```
+
+---
+
+# 📸 Application Screenshots
+
+## 🏠 Landing Page
+
+![Landing](screenshots/landing-page.png)
+
+---
+
+## 🔑 Login
+
+![Login](screenshots/login-page.png)
+
+---
+
+## 📝 Register
+
+![Register](screenshots/register-page.png)
+
+---
+
+## 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📂 Document Management
 
 ![Documents](screenshots/documents.png)
 
 ---
 
-## Knowledge Graph
+## 🕸 Knowledge Graph
 
 ![Knowledge Graph](screenshots/knowledge-graph.png)
 
 ---
 
-## Timeline
+## 📅 Timeline
 
 ![Timeline](screenshots/timeline.png)
 
 ---
 
-## Smart Search
+## 🔍 Smart Search
 
 ![Smart Search](screenshots/smart-search.png)
 
 ---
 
-## Analytics
+## 📈 Analytics
 
 ![Analytics](screenshots/analytics.png)
 
 ---
 
-## AI Assistant
+## 🤖 AI Assistant
 
 ![AI Assistant](screenshots/ai-assistant.png)
 
 ---
 
-## Resume Builder
+## 📄 Resume Builder
 
 ![Resume Builder](screenshots/resume-builder.png)
 
 ---
 
-## Profile
+## 👤 Profile
 
 ![Profile](screenshots/profile-page.png)
 
 ---
 
-## Settings
+## ⚙ Settings
 
 ![Settings](screenshots/settings-page.png)
 
 ---
 
-# ⚙️ Installation
+# ⚙ Installation
 
 ## Clone Repository
 
@@ -242,13 +281,21 @@ cd MemoryVerse-AI
 python -m venv venv
 ```
 
-## Activate Environment
+## Activate Virtual Environment
 
-Windows
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
 
 ## Install Dependencies
 
@@ -256,7 +303,9 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Run the Application
+---
+
+## Run Application
 
 ```bash
 python app.py
@@ -270,34 +319,27 @@ http://127.0.0.1:5000
 
 ---
 
-# 🎯 Problem Statement
+# 🚀 Future Roadmap
 
-Students frequently struggle to manage and retrieve important academic and professional documents stored across multiple locations.
-
-MemoryVerse AI addresses this challenge by providing a unified platform that centralizes document storage, improves organization, and enhances accessibility through a modern dashboard and intelligent user experience.
-
----
-
-# 🚀 Future Enhancements
+The current prototype establishes the core platform for document management and digital identity. Future enhancements may include:
 
 - OCR-based document text extraction
 - AI-powered document categorization
 - Semantic document search
-- Knowledge graph automation
 - Resume parsing
-- Embedding-based retrieval
-- RAG-powered AI Assistant
+- Knowledge graph automation
+- Embedding-based document retrieval
+- RAG-powered AI assistant
 - Cloud storage integration
-- Mobile application
+- Mobile application support
 - Voice-enabled search
+- AI-generated document summaries
 
 ---
 
-# 🏆 Hackathon Information
+# 🏆 Hackathon Submission
 
-**Project:** MemoryVerse AI – Intelligent Digital Identity System
-
-Developed as a prototype for the **MemoryVerse AI '26 Hackathon**, focusing on creating a centralized platform for managing students' academic and professional digital identities.
+This project was developed as part of the **MemoryVerse AI '26 Hackathon**, with the objective of creating an intelligent Digital Identity System that helps students manage their academic and professional documents through a modern web platform.
 
 ---
 
@@ -307,14 +349,28 @@ Developed as a prototype for the **MemoryVerse AI '26 Hackathon**, focusing on c
 
 **B.Tech – Artificial Intelligence & Data Science**
 
+GitHub: https://github.com/kamalikasenthilnaathan09
+
+---
+
+# 🤝 Contributing
+
+Contributions, suggestions, and feature requests are welcome.
+
+Feel free to fork this repository and submit pull requests for improvements.
+
 ---
 
 # 📄 License
 
-This project is developed for educational and hackathon purposes.
+This project is intended for educational, learning, and hackathon purposes.
 
 ---
 
-<p align="center">
-⭐ If you found this project interesting, consider giving it a star on GitHub!
-</p>
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a Star!
+
+**Thank you for visiting MemoryVerse AI ❤️**
+
+</div>
